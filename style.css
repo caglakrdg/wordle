@@ -1,0 +1,91 @@
+* {
+  box-sizing: border-box;
+  font-family: "Limelight", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+input {
+    all: unset;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 0;
+  background-color: #eafef0;
+}
+
+h1 {
+  color: #386c5f;
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 68px;
+  margin-bottom: 20px;
+  padding: 20px;
+  background-color: #386c5f;
+
+  a {
+    font-size: 18px;
+    text-decoration: none;
+    color: #9db0a3;
+  }
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  margin-bottom: 32px;
+}
+
+.loading-indicator {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  color: #9db0a3;
+}
+
+.loading-icon {
+  display: inline-block;
+  animation: spin 2s linear infinite;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.wordle-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.word-by-letter {
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+}
+
+.letter-input {
+  width: 64px;
+  height: 64px;
+  text-transform: capitalize;
+  font-size: 52px;
+  text-align: center;
+  color: #3a4a40;
+  background: #d9eddf;
+}
